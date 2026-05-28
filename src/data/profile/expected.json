@@ -1,0 +1,11 @@
+{
+  "_comment": "Expected UI text and profile data for My Info (About me).",
+  "labels": {
+    "personalDetailsHeading": "Personal Details",
+    "employeeFullNameLabel": "Employee Full Name"
+  },
+  "profile": {
+    "displayName": "mandaa user",
+    "firstName": "mandaa"
+  }
+}

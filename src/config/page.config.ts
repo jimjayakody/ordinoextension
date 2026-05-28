@@ -7,7 +7,12 @@ import {
 } from '@playwright/test';
 import * as dotenv from 'dotenv';
 import * as path from 'path';
-import { LoginPage, DashboardPage, ForgotPasswordPage } from '@config/page-loader';
+import {
+  LoginPage,
+  DashboardPage,
+  ForgotPasswordPage,
+  AboutMePage,
+} from '@config/page-loader';
 
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
@@ -81,6 +86,7 @@ type MyFixtures = {
   loginPage: LoginPage;
   dashboardPage: DashboardPage;
   forgotPasswordPage: ForgotPasswordPage;
+  aboutMePage: AboutMePage;
 };
 
 const test = baseTest.extend<MyFixtures>({
@@ -92,6 +98,9 @@ const test = baseTest.extend<MyFixtures>({
   },
   forgotPasswordPage: async ({ page }, use) => {
     await use(new ForgotPasswordPage(page));
+  },
+  aboutMePage: async ({ page }, use) => {
+    await use(new AboutMePage(page));
   },
 });
 
