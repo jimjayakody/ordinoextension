@@ -1,0 +1,4 @@
+{
+  "_comment": "Expected UI text for forgot-password assertions.",
+  "labels": { "resetPasswordHeading": "Reset Password" }
+}

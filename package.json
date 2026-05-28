@@ -1,0 +1,25 @@
+{
+  "name": "ordinoextension",
+  "version": "1.0.0",
+  "description": "OrangeHRM Playwright automation (Ordino)",
+  "scripts": {
+    "ui:headed": "playwright test --headed --project=chromium --workers=1 --trace on",
+    "ui:headless": "playwright test --project=chromium",
+    "ui:debug": "playwright test --debug",
+    "clean": "node -e \"const fs=require('fs'); ['test-results','playwright-report'].forEach(d => fs.rmSync(d,{recursive:true,force:true})); console.log('cleaned');\"",
+    "audit": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimjayakody/ordinoextension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "dotenv": "^17.4.2",
+    "typescript": "^6.0.3"
+  }
+}

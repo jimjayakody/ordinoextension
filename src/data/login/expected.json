@@ -1,0 +1,5 @@
+{
+  "_comment": "Expected UI text for login assertions.",
+  "errors": { "invalidCredentials": "Invalid credentials" },
+  "labels": { "pageTitle": "OrangeHRM" }
+}
